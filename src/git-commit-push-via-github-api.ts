@@ -150,7 +150,7 @@ export const gitCommitPush = (options: GitCommitPushOptions) => {
     }
     const gitHub = new GitHubApi();
     if (token) {
-        gitHub.authenticate({
+        gitHub.auth({
             type: "oauth",
             token: token
         });
